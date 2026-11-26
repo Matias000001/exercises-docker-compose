@@ -1,0 +1,10 @@
+services:
+  frontend:
+    image: matias000001/example-frontend
+    ports:
+      - "5001:5001"
+
+  backend:
+    image: matias000001/example-backend
+    ports:
+      - "8080:8080"
