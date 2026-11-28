@@ -17,13 +17,10 @@ services:
 
   redis:
     image: redis
-    volumes:
-      - redis-data:/data
-  
+
   db:
     image: postgres:18
     environment:
       POSTGRES_PASSWORD: postgres
-
-volumes:
-  redis-data:
+    volumes:
+      - ./database:/var/lib/postgresql
